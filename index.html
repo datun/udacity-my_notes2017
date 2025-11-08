@@ -1,0 +1,284 @@
+
+<!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<head> <!-- The head tag includes important information about the page -->
+  <meta charset="UTF-8">
+  <!-- This line defines something called "character encoding"
+  This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+  You should include this line in the head of all of your webpages. -->
+  <title>Notes of Deniz | Began @ 31.08.2017</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+</head>
+
+<body> 
+
+<div class="header">
+	<h1><span>My Notes</span></h1>
+</div>
+	
+<div class="index">
+	<h1>Index</h1>
+		<ol>
+			<li><a href="#L1">Lesson 1: Learn To Code</a>
+				<ul>
+					<li><a href="#L1.1">Some Definitions</a></li>
+					<li><a href="#L1.2">HTML Tags</a></li>
+					<li><a href="#L1.3">HTML Document Basis</a></li>
+					<li><a href="#L1.4">Resources Recommended</a></li>
+				</ul>
+			<li><a href="#L2">Lesson 2: Make A Stylish Webpage</a>
+				<ul>
+					<li><a href="#L2.1">Some Definitions</a></li>
+					<li><a href="#L2.2">Adding CSS</a></li>
+					<li><a href="#L2.3">Box Sizing and Positioning</a></li>
+					<li><a href="#L2.4">Resources Recommended</a></li>
+				</ul>
+			</li>
+		</ol>
+</div>
+<br>
+
+<div class="title1"> <!-- divisor of "Lesson 1" -->
+	<h1 id="L1"><span>Lesson 1: Learn To Code</span></h1>
+</div>
+	
+<div class="title2">
+	<h2 id="L1.1">Some Definitions</h2>
+		<div class="content"> <!-- divisor of contents -->
+			<ul>
+				<li>HTML: Hyper-text Markup Language
+				<li>HTTP: Request protocol (Hyper-text transfer protocol)
+				<li> W3Schools: HTML tag reference/documentation
+			</ul>
+			
+			<p> HTML is the basic language of creating webpages. It provides base grounds for modern
+			languages to work around. HTML forms this basis by "tags", they have simple stylistic properties;
+			but also they are used to create the draft of the webpage by block elements. (explained later)
+			
+			To Summarize: HTML is simple styling of webpage, which also creates layouts for modern languages.
+			</p>		
+		</div> <!-- divisor of contents end -->
+</div> <!-- divisor of "Some Definitions" end -->
+	
+	
+<div class="title2">
+	<h2 id="L1.2"><span>HTML Tags</span></h2>
+		<div class="content">
+			<p>
+			As I've mentioned before, HTML coding is done by tags. Tags may look basic and they may serve simple
+			purposes; but that doesn't  change the fact that they are the key components of webpages.
+			
+			Here you will find some frequently used HTML tags and where & how they are used.
+			
+			Small definition:
+			Anything with "<b>&lt;></b>" around is called a tag!
+			</p>
+		</div>
+		
+		<div class="example-content">
+			<div class="example">
+			<u>Input:</u> <b>&lt;b></b> BOLD <b>&lt;/b></b><br>
+			<u>Output:</u> <b>BOLD</b><br><br>
+			Using this tag allows your text to be shown in bold.
+			<!-- " &lt; " used to show HTML tag without being rendered/compiled -->
+			</div>
+
+			<div class="example">
+			<u>Input:</u> <b>&lt;em></b> ITALIC <b>&lt;/em></b><br>
+			<u>Output:</u> <em> ITALIC </em><br><br>
+			Using this tag allows your text to be shown in italic.
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <b>&lt;a href</b>="Webpage-URL"> <em>HYPERLINK-TEXT</em> <b>&lt;/a></b><br>
+			<u>Output:</u> <a href="Webpage-URL"> HYPERLINK-TEXT </a><br><br>
+			Above tag has two parts to use. <br>
+			In href, we give the webpage url that we are trying to link.<br>
+			In between &lt;a>&lt;/a>, we write the text that will be shown on the webpage as a link.<br>
+			(Trivia: href means "Hypertext Reference")
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <b>&lt;img src</b>="Image URL" alt="<em>TEXT</em>"><br>
+			<u>Output:</u> <img src="placeholder.png" alt="TEXT"><br><br>
+			Above tag is a <em>VOID</em> tag, thus it doesn't need a closing tag.<br>
+			Using it shows an image, and if image fails to load (as in here) it shows placeholder text
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <em>TEXT1</em><b>&lt;br></b><em>TEXT2</em><br>
+			<u>Output:</u> TEXT1<br>TEXT2<br><br>
+			Above tag is also a VOID tag. It means "break line", it ends the line where it is placed and starts a new line.<br>
+			Also it is an inline element! Which means, it acts like a text. (Will be important later)
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <em>TEXT1</em><b>&lt;p></b><em>PARA</em><b>&lt;/p></b><em>TEXT2</em><br>
+			<u>Output:</u> TEXT1<p>PARA</p>TEXT2<br><br>
+			Above tag is called paragraph tag. It also breaks line, but while doing it it also creates a block around the content.<br>
+			Thus it is called a block element. (Again will be important later)
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <b>&lt;span></b><em>TEXT</em><b>&lt;/span></b><br>
+			<u>Output:</u> <span>TEXT</span><br><br>
+			Above tag is used to group elements inline. It can be used for styling inline elements.<br>
+			[Acts like inline elements]
+			</div>
+			
+			<div class="example">
+			<u>Input:</u> <b>&lt;div></b><em>TEXT</em><b>&lt;/div></b><br>
+			<u>Output:</u> <div>TEXT</div><br>
+			Above tag is used to group elements into blocks. These blocks can be stylized later on.
+			</div>
+	</div>
+</div>
+	
+	
+<div class="title2">
+   <h2 id="L1.3">HTML Document Basis</h2>
+		<div class="content">
+		<p><b>&lt;!DOCTYPE HTML></b>: Document type, helps browser rendering the correct document type.</p>
+			<p style="margin-left: 20px"><b>&lt;html>:</b> Top level of HTML file, wraps all content.</p>
+			  <p style="margin-left: 40px"><b>&lt;head>:</b> Metadata, Title, CSS, Javascript etc. is found here.</p>
+				<p style="margin-left: 60px"><b>&lt;title></b> Title of page, displayed at the top of browser. <b>&lt;/title></b></p>
+			  <p style="margin-left: 40px"><b>&lt;/head></b> - end of head.</p><br>
+
+			  <p style="margin-left: 40px"><b>&lt;body>:</b> body of HTML, actual content is found here.</p>
+			 <p style="margin-left: 40px"> <b>&lt;/body></b> - end of body</p>
+			  
+			<p style="margin-left: 20px"><b>&lt;/html></b> -end of html</p>
+		</div>
+</div>
+	
+<div class="title3">
+	<h3 id="L1.4">Resources Recommended</h3>
+		<ul>
+			<li> <a href="https://www.w3schools.com/tags/">W3Schools' HTML Tag Reference</a>: From left sidebar or by going through the main page,
+			search or learn more about the tags you are interested.
+			<li> <a href="https://www.google.com/">Google</a>: Asking Google is the basis of learning.
+		</ul>
+</div>
+	
+
+<div class="title1">
+	<h1 id="L2">Lesson 2: Make A Stylish Webpage</h1>
+</div>
+	
+<div class="title2">
+	<h2 id="L2.1">Some Definitions</h2>
+		<div class="content">
+			<ul>
+				<li>HTML: Hyper-text Markup Language
+				<li>CSS: Cascading Style Sheets
+				<li>DOM: Documentt Object Model
+			</ul>
+			
+			<p>
+			As previously I've said, HTML is creates layouts. The styling of those layouts are done by CSS codes.
+			Remember when I said block elements will be important later. This is the later part. CSS codes allow you to stylize
+			those block elements individually. To give a simple example, you can change the background color of that block, text color
+			of its contents and even the blocks height and width.
+			
+			This leads us to another fact of webpage design. Everything is boxes, you should be thinking with boxes too.
+			<em>Now you are thinking with portals.</em>
+			It may be your own design, it may be given by a designer. What you need to do is <b>GROUP</b> elements into boxes.
+			From large boxes to small boxes, then after boxifying the design you can create respective div's and classes.		
+			</p>
+		</div>
+</div>
+	
+<div class="title2">
+	<h2 id="L2.2">Adding CSS</h2>	
+		<div class="content">
+		<p>
+		First things first, to make our life easier and design process without any repetitions, we will use div classes.<br>
+		<b>&lt;div class</b>="<em>CLASS NAME</em>"> <b>&lt;/div></b>.<br>
+		By doing so, whenever we style CLASS NAME, it will be applied to all div's with CLASS NAME. Thus saving us some precious time.<br><br>
+		
+		We can use CSS, inside the HTML file; but it would create a cluster of mess. To prevent looking at a tiring mess of codes, it is 
+		suggested to code CSS on a different file and link that file into HTML.<br>
+		Into the &lt;head> type:<br>
+		&lt;link rel="stylesheet" type="text/css" href="style.css"><br>
+		Thus your HTML file will be looking for style.css inside the <b>SAME FOLDER</b> that HTML file is currently in and apply the styles found 
+		inside that file.
+		</p>
+		
+		<div class="example">
+		<u>Input:</u><br>
+		<b>.CLASSNAME</b>{<br>
+		color: red;<br>
+		}<br>
+		<u>Output:</u><br>
+		<div class="CLASSNAME">Text inside classname.</div><br><br>
+		</div><br>
+		Now lets move step by step by looking at this example.<br>
+		"<b>.CLASSNAME</b>" defines the class name for divs with that name. An example of Object-oriented programming.<br>
+		Inside the curvy brackets, CSS codes are there which gives styling/attributes to the defined class.<br>
+		For this example classname gives light-blue background color for the "text inside classname"<br><br>
+		
+		Also, there may be classes inside classes with different attributes. The smallest child class overrides overlapping rules.<br><br>
+	
+		<div class="example"><u>Input:</u><br>
+		<b>&lt;.CLASSNAME</b>{<br>
+		display: flex;<br>
+		}<br>
+		<u>Output:</u><br>
+		Multiple block elements inside one block element are arranged in a flexible manner.<br><br>
+		</div><br>
+		What I mean by that can be learned by visiting this <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">link</a>.<br>
+		But to simply put it, divisors create line breaks and blocks. Flex allows multiple divisors in a divisor to be arranged right next to 
+		each other rather than their default horizontal positioning. (It also has many more properties, just check the link)
+		</div>
+</div>
+
+<div class="title2">
+	<h2 id="L2.3">Box Sizing and Positioning</h2>
+		<div class="content">
+		<p>
+		First of all boxes has 4 elements.<br>
+			<ul>
+				<li><b>Margin:</b> creates blank space between the box and other elements on the webpage. This prevents overlapping items.
+				<li><b>Border:</b> creates a border around the padding and the content.
+				<li><b>Padding:</b> creates a blank space between border and the content.
+				<li><b>Content:</b> obvious isn't it?
+			</ul>
+		Now, every element has a size and this may cause trouble when trying to create an exact size. Whenever you are resizing a block element, 
+		you must remember that there are 4 elements to take into consideration.<br>
+		Other than that, it is a good practice to set size in terms of percentage rather than pixels. This will prevent boxes overlapping or going out 
+		of window border due to the size of the browser.<br><br>
+		
+		As in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">MDN webdocs</a>; some experts recommend applying box-sizing: border-box to all elements.<br><br>
+		
+		Because of that, In lesson 2.4.11, we are given to use<br><br>
+		* {<br>
+		-webkit-box-sizing: border-box;<br>
+		-moz-box-sizing: border-box;<br>
+		-ms-box-sizing: border-box;<br>
+		box-sizing: border-box;<br>
+		}<br><br> 
+		
+		in most of our CSS codes as a default.
+		</div>
+</div>
+	
+<div class="title3">
+	<h3 id="L2.4">Resources Recommended</h3>
+		<div>
+		<ul>
+			<li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN web docs' CSS Reference</a>: Go with a CTRL+F to find what 
+			you are looking for.
+			<li> <a href="https://css-tricks.com/how-css-selectors-work/">CSS-Tricks about CSS selectors</a>
+			<li> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks about Flexbox</a>
+			<li> <a href="https://validator.w3.org/#validate_by_input">HTML Markup Validation Service</a>
+			<li> <a href="http://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input">CSS Validation Service</a>
+		</ul>
+		</div>
+</div>
+
+<div class="footer">
+<b>Notes of dAtun<br>
+01.09.2017</b>
+</div>
+	
+</body>
+</html>
